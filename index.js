@@ -41,6 +41,7 @@ class ServerlessPythonRequirements {
           process.platform === 'win32'
             ? 'python.exe'
             : this.serverless.service.provider.runtime || 'python',
+        useChown: false,
         dockerizePip: false,
         dockerSsh: false,
         dockerPrivateKey: null,
